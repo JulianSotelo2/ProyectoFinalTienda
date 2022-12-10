@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light py-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg" width="100" height="40" alt="LOGO">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="clientes" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex" id="navmenu">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link"     routerLinkActive="active" routerLink="clientes">USUARIOS</a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"      routerLinkActive="active"  routerLink="mascotas">VENDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"      routerLinkActive="active"routerLink="reserva">GRADING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"      routerLinkActive="active" routerLink="servicios">ENVIOS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"      routerLinkActive="active" routerLink="productos">PRODUCTOS</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link"      routerLinkActive="active" routerLink="acerca">ACERCA DE                        </a>
+                    </li>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLinkActive="active"  routerLink="login">LOGIN</button>
+                </ul>
+             
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

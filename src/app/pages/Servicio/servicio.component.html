@@ -1,0 +1,72 @@
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-7">
+        <h1>PAQUETERIA </h1>
+        <hr>
+  
+  
+        <div class="row text-right">
+          <div class="col">
+            <button class="btn btn-primary" routerLink="/servicios">
+              <i class="fa "></i>
+              CANCELAR
+            </button>
+          </div>
+        </div>
+  
+  
+  
+        <div class="row animated fadeIn faster">
+          <div class="col">
+  
+            <form (ngSubmit)="guardar( f )" #f="ngForm">
+  
+              <div class="form-group">
+                <label>Firebase ID</label>
+                <input type="text" class="form-control" placeholder="Firebase ID" [(ngModel)]="servicio.id" name="id"
+                  disabled="disabled">
+                <small class="form-text text-muted">Este campo es autogenerado</small>
+              </div>
+  
+  
+              <div class="form-group">
+                <label>Producto</label>
+                <input type="text" class="form-control" placeholder="Nombre del Producto" [(ngModel)]="servicio.Producto"
+                  name="Producto" required>
+              </div>
+  
+              <div class="form-group">
+                <label>Direccion</label>
+                <input type="text" class="form-control" [(ngModel)]="servicio.Direccion" name="Direccion"
+                  placeholder="Direccion a donde se va a mandar">
+              </div>
+  
+  
+  
+  
+  
+              <hr>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary w-25">
+                  <i class="fa fa-save"></i>
+                  Guardar
+                </button>
+              </div>
+  
+  
+            </form>
+  
+  
+          </div>
+        </div>
+  
+  
+  
+  
+  
+      </div>
+  
+  
+    </div>
+  </div>
+  <br><p></p><br><br>

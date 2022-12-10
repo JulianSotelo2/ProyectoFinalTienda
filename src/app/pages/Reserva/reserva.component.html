@@ -1,0 +1,83 @@
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-7">
+        <h1>GRADING </h1>
+        <hr>
+  
+  
+        <div class="row text-right">
+          <div class="col">
+            <button class="btn btn-primary" routerLink="/reservas">
+              <i class=""></i>
+              CANCELAR
+            </button>
+          </div>
+        </div>
+  
+  
+  
+  
+
+        <div class="row animated fadeIn faster">
+          <div class="col">
+  
+            <form (ngSubmit)="guardar( f )" #f="ngForm">
+  
+              <div class="form-group">
+                <label>ID</label>
+                <input type="text" class="form-control" placeholder="ID" [(ngModel)]="reserva.id" name="id"
+                  disabled="disabled">
+                <small class="form-text text-muted">Este campo es autogenerado</small>
+              </div>
+  
+  
+              <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="reserva.Nombre"
+                  name="nombre" required>
+              </div>
+  
+              <div class="form-group">
+                <label>Nombre De la carta</label>
+                <input type="text" class="form-control" [(ngModel)]="reserva.NombreCarta" name="NombreCarta"
+                  placeholder="Nombre De carta">
+              </div>
+  
+              <div class="form-group">
+                <label>Correo</label>
+                <input type="text" class="form-control" [(ngModel)]="reserva.Correo" name="Correo"
+                  placeholder="Correo">
+              </div>
+  
+  
+  
+  
+  
+  
+  
+  
+              <hr>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary w-25">
+                  <i class="fa fa-save"></i>
+                  Guardar
+                </button>
+              </div>
+  
+  
+            </form>
+  
+  
+          </div>
+        </div>
+  
+  
+  
+  
+  
+      </div>
+  
+  
+    </div>
+  </div>
+  
